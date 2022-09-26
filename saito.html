@@ -94,7 +94,355 @@
 			</label>
 		</li>
 			</ul>
-		<p>最終更新：2022/09/26 13:16</p>	
+	<body>
+		<header>
+			<nav>
+				<ul class="main-menu">
+					<a href="index_test.php"><li class="selected">ホーム</li></a>
+					<a href="MemberView_test.php"><li>部員リスト</li></a>
+					<a href="PlanEntry_test.php"><li>計画書の登録</li></a>
+					<a href="PlanView_test.php"><li>計画書の閲覧</li></a>
+					<a href="PlanSearch_tset.php"><li>計画書の検索</li></a>
+					<a href="Course.php"><li>コース考察</li></a>
+				</ul>
+			</nav>
+		</header>
+		<h1>「超三角点2.0 RC版」について</h1>
+		<ul>
+			<li>「超三角点2.0 RC版」は計画書の作成を補助するためのWEBアプリケーションです。</li>
+			<li>リリース候補版へと進化しました。</li>
+			<li>各種編集が可能になりました。</li>
+			<li>スマホへの対応も行いました。(表示崩れ等がある場合はご連絡ください。)</li>
+			<li>基本的に旧Verとデータを共有していますが、山行記録のみ共有されていないので注意してください。</li>
+			<li>Firefoxでは山行記録の日時欄の入力が少し面倒かもしれません。(後程改善する予定)</li>
+			<li>学籍番号が反映されないバグを修正。ゴメンネ😋(21/06/03)</li>
+			<li>山行記録に写真が添付できるようになりました。(21/06/03)</li>
+			<li>メッセージフォームを設置しました。(21/06/05)</li>
+			<li>「ルート考察」を設置しました。(21/06/10)</li>
+			<li>山行記録、コース考察に「いいね!」ができるようになりました。「いいね!」を押そう!!感謝の数だけ♡ (21/06/11)</li>
+			<li>コース考察をクリックすると自動でクリップボードにコピーするようになりました。また、写真はダブルクリックするとダウンロードが始まります(PCのみ)。(21/06/14)</li>
+			<li>山行記録の写真のサムネイルの解像度を上げました。(21/06/15)</li>
+		</ul>
+		<h1>バグについて</h1>
+		<ul>
+			<li>「超三角点」を利用していて、意図しない動作をした場合などはご報告をお願いします。</li>
+			<li>特に、エラーメッセージが表示される場合はすぐに連絡してください。</li>
+		</ul>
+		<h1>メッセージフォーム<input type="submit" id="up" value="入力" class="" style=""><input type="submit" id="delete" value="削除" style=""></h1>
+		<ul class="record-list" id="form-input" style="display: none;">
+			<li class="selected">
+				<label class="input-br">名前<input type="text" id="Name" value="名無しさん"></label>
+				<label class="input wide">内容<br><textarea id="Message"></textarea></label>
+				<label class="input"><input type="submit" id="submit" value="送信"></label>
+			</li>
+		</ul>
+		<ul class="record-list" id="form-list"><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-17 13:56:34</div><div class="note">気に入っていただけたようで何よりです。<br>また不具合や改善点などあればいつでも連絡して下さい。</div></li><li><div class="place">田中（62期）</div><div class="space"></div><div class="small">21-06-16 20:55:11</div><div class="note">修正ありがとうございます。<br>無事、アップロードできるようになりました。ファイルの数の問題ではなく、名前の問題だったんですね。気づきませんでした。<br><br>コース考察の自動コピペ機能も試しました。めちゃくちゃ便利だと思います。多用させていただきます！<br><br>コース考察以外にもいろいろと使いやすいように更新して頂いているようで、ありがとうございます。</div></li><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-16 18:23:58</div><div class="note">話は変わりますが、コース考察の自動コピペ機能は試しましたか？<br>コース考察の文章をクリックするだけで、コピーでき、Wordなどに貼り付けられます。<br>なかなか便利じゃないかと思うので、是非使ってみてください。</div></li><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-16 18:20:35</div><div class="note">ファイルアップロードの不具合が解消していたら、また連絡くださいね。<br><br>今回の件はローカル環境では普通に動いていたので油断していました。</div></li><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-16 09:35:20</div><div class="note">調べてみるとサーバの設定のせいでファイル名が日本語の場合に正しく処理できていなかったようです。<br>先ほど修正いたしました。<br></div></li><li><div class="place">田中（62期）</div><div class="space"></div><div class="small">21-06-16 08:32:46</div><div class="note">返信遅くなってすみません。<br><br>ファイルが一つしかアップロードできない件ですが、特定の計画書ではなく、全ての計画書に対してこのエラーが発生してしまいます。他のCLにも同様のエラーが発生するのか聞きましたが、誰も回答してくれていないので分かりません。<br>まとめて送ろうとしても、そのうちの一つのファイルしか読み込まれない模様です。<br>ちなみに、旧バージョンからも試したところ、旧バージョンでは複数のものをアップロードできました。</div></li><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-14 11:44:25</div><div class="note">やはり1フォームにつき1ファイルはPCからでは使いにくいので、まとめて送れるようにも設定しなおしました。<br>初心者にもわかりやすいよう、「+ファイルを追加」でフォームの数を増やすこともできます。</div></li><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-14 11:29:44</div><div class="note">その不具合はこちらからは確認できないので該当する計画書のIDを教えてもらっても大丈夫でしょうか？<br><br>補足ですが、旧バージョンでは一つのフォームで複数のファイルを送れるようにしていましたが、新バージョンでは一つにつき1ファイルで、「+ファイルを追加」ボタンを押すとフォームが増える仕様になっています。</div></li><li><div class="place">田中（62期）</div><div class="space"></div><div class="small">21-06-14 06:16:13</div><div class="note">度々の返信、及び、素早いご対応ありがとうございます。<br><br><br>GPXファイルの件、早速対応して頂いてありがとうございます。ダウンロードできるようになりました。<br><br>確かに、コース考察の変遷が見られるのはおもしろいかもしれないですね。<br><br><br>ところで、不具合の報告なのですが、ファイル形式に関わらず、1計画につき1つのファイルしかアップロードできなくなっています。特に至急の案件というわけではありませんが、修正して頂けると助かります。</div></li><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-14 00:18:27</div><div class="note">使ってくれてありがとうございます。<br>「いいね!」を連打しておきますね。<br><br>GPXファイルの件は修正しておきました。<br>GPXに使われるデータ形式のXMLはWebで使われるHTMLの親戚みたいなものなので中身が表示されてしまうようですね。<br>PDFや画像以外は強制的にダウンロードするよう書き換えておきました。<br><br>コース考察のレビュー機能については承知しました。<br>今のままだと以前にコース考察書いた人に遠慮して、更新しにくいではないかと思い提案してみたのですが、部内で円滑なコミュニケーションが取れるのであればあまり必要性がないかもしれませんね。<br><br>ただ、過去のコース考察を残しておける機能はそのうち載せようと思っています。コース考察の内容が変遷していくのを見るのは歴史を眺めているようで結構面白いのではないかと思うので。<br><br>地理院地図の件はおまけでつけてみようかなと思っている程度です。<br>そんなに難しくはないはずなので、そのうち追加するかもしれません。</div></li><li><div class="place">田中（62期）</div><div class="space"></div><div class="small">21-06-13 21:34:08</div><div class="note">アップデート本当にありがとうございます。以下、使ってみた感想を記しますので、今後の参考にしていただければ幸いです。<br><br>【コース考察について】<br>コース考察のサンプルデータを確認しました。また、新たにコース考察を追加してみて試してみましたが、特に動作に不具合もなく、使い勝手も良かったです。本当にありがとうございます。<br>また、草案をレビューする機能の必要性は個人的には感じておりません。コメント機能で何かしらのメッセージを残すことで、十分対応できるかと思っております。<br><br>【GPXファイルのアップロードについて】<br>実際にGPXファイルをアップロードすることができました。<br>ただ、他の人の記録をダウンロードすることができないのですが、ダウンロードするにはどうすればよいでしょうか？もし、現在の環境ではダウンロードまではできないのであれば、ダウンロードもできるようにしていただけるとありがたいです。<br>地理院地図に表示する機能は確かにあれば便利かもしれないですね。ただ、ダウンロードさえできればカシミール等ですぐに表示できるので、絶対に必要かと言われればそうでもないかもしれないですが…</div></li><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-11 18:33:15</div><div class="note">コース考察についてですが、コメント機能やバージョニングおよび新バージョンの草案をレビューするシステム(プルリクエスト)は必要ですか?<br>例えばコース考察を書き換える際に、一時的な草案を送信してその草案に対して2人以上の了承が得られれば自動で更新する。といった使い方を考えています。<br>(草案自体にもコメントができ、議論しながら修正可能です。)<br><br>ひとまずコメント機能は載せようと思いますが、バージョニング、プルリクエストは仕組みをよく考えてから導入しなければならないので要望があれば載せたいと思います。</div></li><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-10 09:52:56</div><div class="note">ひとまずコース考察の機能を試験的に追加しました。<br>どんな感じかが伝わるよう奥三河の項目にサンプルデータを書き込んでいます。<br><br>gpxファイルについても対応しておきました。対応するファイルの拡張子はすぐ追加できるので、もっと気軽に言ってもらって構いません。<br><br>gpxファイルを読み込んで、地理院地図に表示する機能があってもいいかも知れないですね。<br>実は山行記録の写真をアップロードする際にExifの位置情報をDB上に保存する機能を載せているので、それも有効活用できますし。<br></div></li><li><div class="place">丸岡(62期)</div><div class="space"></div><div class="small">21-06-09 02:39:12</div><div class="note">様々な機能を追加していただき本当にありがとうございます。作業がしやすくなり非常に助かっています。<br>コース考察のデータベース化もぜひお願いしたいです。<br>よろしくお願いします。</div></li><li><div class="place">田中（62期）</div><div class="space"></div><div class="small">21-06-09 02:30:31</div><div class="note">いつも我々現役の要望に応えて下さってありがとうございます。<br><br>コース考察のデータベース化に関しても、無理にとは言いませんが、よろしければお願い致します。<br>今のところ、GPSのログをアップロードすることができないですが、gpxファイルもアップロードできるようになれば良いなと個人的には思っております。（CLのみんながみんな、GPSのログを取っているわけではないので、使う人は少ないかもしれませんが…）</div></li><li><div class="place">釣本(管理者)</div><div class="space"></div><div class="small">21-06-08 20:24:33</div><div class="note">コース考察のデータベース化を検討中です。
+<br>もし現役部員3人以上からの要望が有れば導入したいと思います。
+<br>賛成の方はここに記入してください。
+<br>
+<br>今のところ登録したコース考察を皆が編集してアップデートしていけるような使い方を想定しています。もちろん写真やそれに付随するキャプションの投稿も行えるようにしたいと思っています。
+<br>
+<br>他にもご意見、ご感想、改善点などあればよろしくお願いいたします。
+<br></div></li><li><div class="place">釣本(作成者)</div><div class="space"></div><div class="small">21-06-05 19:57:04</div><div class="note">メッセージフォームを設置しました。
+<br>ご意見、ご感想等あればお送りください。</div></li></ul>
+		<script>
+			class Form{
+				constructor(){
+					this.ul_list = document.getElementById("form-list");
+					this.li_list = [];
+					
+					this.ul_input = document.getElementById("form-input");
+					this.ul_input_display = this.ul_input.style.display;
+					this.ul_input.style.display = "none";
+					
+					this.input_value = {};
+					this.input_value["Name"] = document.getElementById("Name");
+					this.input_value["Message"] = document.getElementById("Message");
+					this.input_submit = document.getElementById("submit");
+					
+					this.button_mode = {};
+					this.button_mode["input"] = document.getElementById("up");
+					this.button_mode["delete"] = document.getElementById("delete");
+					this.button_mode_display = {};
+					for(let key in this.button_mode){
+						this.button_mode_display[key] = this.button_mode[key].style.display;
+					}
+					
+					this.post_insert = new FormData();
+					
+					this.req_form = new XMLHttpRequest();
+					this.url_form = "api_form.php";
+					this.data_form = {"num":0, "data":[]};
+					
+					this.req_form_write = new XMLHttpRequest();
+					this.url_form_write = "api_form_write.php";
+					this.data_form_write = {"num":0, "data":[]};
+					
+					this.req_form_write_delete = new XMLHttpRequest();
+					this.data_form_write_delete = {"num":0, "data":[]};
+					
+					this.input_submit_delete = null;
+				}
+				
+				htmlspc(str){
+					return (str + '').replace(/&/g,'&amp;')
+					.replace(/"/g,'&quot;')
+					.replace(/'/g,'&#039;')
+					.replace(/</g,'&lt;')
+					.replace(/>/g,'&gt;');
+				}
+				
+				update_data_form(){
+					let TH = this;
+					return TH.send(TH.req_form, "GET", TH.url_form, null).then((res) => {TH.data_form = JSON.parse(res);});
+				}
+				
+				update_li_form(){
+					let TH = this;
+					
+					TH.li_list = [];
+					while(TH.ul_list.firstChild) TH.ul_list.firstChild.remove();
+					for(let i in TH.data_form["data"]){
+						let data = TH.data_form["data"][i];
+						let li = document.createElement("li");
+						
+						let add_div = function(class_name, text, br = false){
+							let div = document.createElement("div");
+							div.className = class_name;
+							if(br){
+								div.innerHTML = TH.htmlspc( text ).replace(/\n/g,'<br>');
+							}else{
+								div.textContent = text;
+							}
+							li.appendChild(div);
+						};
+						
+						add_div("place", data["Name"]);
+						add_div("space", "");
+						add_div("small", data["DateTime"].slice(2));
+						add_div("note", data["Message"], true);
+						
+						TH.ul_list.appendChild(li);
+						TH.li_list[i] = li;
+					}
+				}
+				
+				set_button_up(){
+					let TH = this;
+					
+					this.button_mode["input"].onclick = function(){
+						let anime = new Anime(TH.ul_input).set_old_height();
+						if(this.className === "selected"){
+							TH.end_input_mode();
+							anime.animate_disappear_no_disp();
+						}else{
+							TH.start_input_mode();
+							anime.set_new_height().animate_height();
+						}
+					};
+				}
+				
+				start_input_mode(){
+					let TH = this;
+					
+					for(let key in TH.button_mode){
+						TH.button_mode[key].style.display = "none";
+					}
+					TH.button_mode["input"].style.display = TH.button_mode_display["input"];
+					TH.button_mode["input"].value = "入力を終了";
+					TH.button_mode["input"].className = "selected";
+					
+					TH.ul_input.style.display = TH.ul_input_display;
+					
+					TH.input_submit.onclick = function(){
+						let anime = new Anime(TH.ul_list).set_old_height();
+						let anime2 = new Anime(TH.ul_input).set_old_height();
+						TH.read_input()
+						.then(() => TH.send_post_insert())
+						.then(() => TH.update_data_form())
+						.then(() => TH.update_li_form())
+						.then(() => TH.end_input_mode(true))
+						.then(() => {
+							anime.set_new_height().animate_height();
+							anime2.animate_disappear_no_disp();
+						})
+						.catch((error) => {console.log("ERROR:" + error);});
+					};
+				}
+				
+				end_input_mode(reset_form = false){
+					let TH = this;
+					
+					for(let key in TH.button_mode){
+						TH.button_mode[key].style.display = TH.button_mode_display[key];
+					}
+					TH.button_mode["input"].value = "入力";
+					TH.button_mode["input"].className = "";
+					TH.ul_input.style.display = "none";
+					
+					if(reset_form){
+						//this.input_value["Name"].value = "名無しさん";
+						this.input_value["Message"].value = "";
+					}
+				}
+				
+				read_input(){
+					let TH = this;
+					
+					TH.post_insert = new FormData();
+					for(let key in TH.input_value){
+						if(key === "Name" && TH.input_value[key].value === ""){
+							window.alert("名前を入力してください。");
+							return Promise.reject("No Name");
+						}
+						TH.post_insert.append("Form[0][" + key + "]", TH.input_value[key].value);
+						TH.post_insert.set("insert", 1);
+					}
+					for(let pair of TH.post_insert.entries()){
+						console.log("key:" + pair[0] + " val:" + pair[1]);
+					}
+					return Promise.resolve();
+				}
+				
+				send_post_insert(){
+					let TH = this;
+					
+					if(TH.post_insert.has("insert")){
+						return TH.send(TH.req_form_write, "POST", TH.url_form_write, TH.post_insert)
+						.then((res) => {console.log(res);});
+					}else{
+						return Promise.reject("No Insert Data");
+					}
+				}
+				
+				send(req, method, url, param_post = null, param_get = {}){
+					let param = [];
+					let param_str = "";
+					for(let key in param_get){
+						param.push( encodeURIComponent(key) + "=" + encodeURIComponent(param_get[key]) );
+					}
+					if(param.length > 0){
+						param_str = "?" + param.join("&");
+					}
+					
+					return new Promise((resolve, reject) => {
+						req.open(method, url + param_str, true);
+						req.send(param_post);
+						req.onreadystatechange = function(){
+							if((this.readyState === 4) && (this.status === 200)){
+								resolve(this.responseText);
+							}
+						};
+					});
+				}
+				
+				set_button_delete(){
+					let TH = this;
+					
+					this.button_mode["delete"].onclick = function(){
+						if(this.className === "selected"){
+							TH.end_delete_mode();
+						}else{
+							TH.start_delete_mode();
+						}
+					};
+				}
+				
+				start_delete_mode(){
+					let TH = this;
+					
+					for(let key in TH.button_mode){
+						TH.button_mode[key].style.display = "none";
+					}
+					TH.button_mode["delete"].style.display = TH.button_mode_display["delete"];
+					TH.button_mode["delete"].value = "削除を終了";
+					TH.button_mode["delete"].className = "selected";
+					
+					for(let li of TH.li_list){
+						li.className = "selected";
+						li.onclick = function(){
+							if(this.className === "delete"){
+								li.className = "selected";
+							}else{
+								li.className = "delete";
+							}
+						};
+					}
+					
+					let submit = document.createElement("input");
+					submit.setAttribute("type", "submit");
+					submit.value = "送信";
+					submit.onclick = function(){
+						let anime = new Anime(TH.ul_list).set_old_height();
+						TH.read_delete()
+						.then(() => TH.send_post_delete())
+						.then(() => TH.update_data_form())
+						.then(() => TH.end_delete_mode())
+						.then(() => anime.set_new_height().animate_height())
+						.catch((error) => {console.log("ERROR:" + error);});
+					};
+					TH.ul_list.after(submit);
+					TH.input_submit_delete = submit;
+					new Anime(submit).set_new_height().animate_appear();
+				}
+				
+				end_delete_mode(reset_form = false){
+					let TH = this;
+					
+					for(let key in TH.button_mode){
+						TH.button_mode[key].style.display = TH.button_mode_display[key];
+					}
+					TH.button_mode["delete"].value = "削除";
+					TH.button_mode["delete"].className = "";
+					
+					if(TH.input_submit_delete !== null){
+						new Anime(TH.input_submit_delete).set_old_height().animate_disappear_no_disp();
+						TH.input_submit_delete.remove();
+						TH.input_submit_delete = null;
+					}
+					
+					TH.update_li_form();
+				}
+				
+				read_delete(){
+					let TH = this;
+					
+					TH.post_delete = new FormData();
+					for(let i in TH.li_list){
+						if(TH.li_list[i].className === "delete"){
+							TH.post_delete.append("FormID[]", TH.data_form["data"][i]["FormID"]);
+							TH.post_delete.set("delete", 1);
+						}
+					}
+					for(let pair of TH.post_delete.entries()){
+						console.log("key:" + pair[0] + " val:" + pair[1]);
+					}
+					return Promise.resolve();
+				}
+				
+				send_post_delete(){
+					let TH = this;
+					
+					if(TH.post_delete.has("delete")){
+						return TH.send(TH.req_form_write_delete, "POST", TH.url_form_write, TH.post_delete)
+						.then((res) => {console.log(res);});
+					}else{
+						return Promise.reject("No Insert Data");
+					}
+				}
+			}
+			
+			window.onload = function(){
+				let fm = new Form();
+				fm.update_data_form().then(() => fm.update_li_form()).then(() => {
+					fm.set_button_up();
+					fm.set_button_delete();
+				});
+			};
+		</script>
+	
+<div id="trend_notification_app" class="trend_notification_app_outer"><div id="trend_notification"><div id="trend_notification_con" class="clearfix"></div></div></div><div id="UMS_TOOLTIP" style="position: absolute; cursor: pointer; z-index: 2147483647; background: transparent; top: -100000px; left: -100000px;"></div></body>
+			<p>最終更新：2022/09/26 13:16</p>	
 				
 			
 	    </body>
