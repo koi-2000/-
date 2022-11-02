@@ -105,4 +105,37 @@
 				
 			
 	    </body>
-</html>
+		
+<b>名前</b> 「メッセージ」<br>
+		$.get("messages.html", function(response){
+    $("#messages").html(response);
+});
+		function load_message(){
+  $.get("messages.html", function(response){
+      $("#messages").html(response);
+  });
+}
+$(document).ready(function(){
+  load_message();
+  $("form").submit(function(){
+      $.post("bbs.php", $(this).serialize(), function(response){
+          alert(response);
+          load_message();
+      } );
+      return false;
+  });
+});
+	<form>
+    名前: <input type="text" name="name">
+    メッセージ: <input type="text" name="message" size="60">
+    <input type="submit" value="送信">
+</form>
+<div id="messages"></div>
+		$("form").submit(function(){
+    $.post("bbs.php", $(this).serialize(), function(response){
+        alert(response);
+        $("input[name='message']").val("");
+    } );
+    return false;
+});
+		</html>
