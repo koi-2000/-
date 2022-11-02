@@ -5,7 +5,7 @@ if( empty($_POST["name"]) or empty($_POST["message"] ) ){
     exit();
 } else
     echo '書き込み完了';
-$fp = fopen("messages.html", "a+");
+$fp = fopen("saito.html", "a+");
 fputs($fp, sprintf("<b>%s</b> 「%s」<br />", $_POST["name"], $_POST["message"]));
 fclose($fp);
 
