@@ -2,5 +2,6 @@ h1{
   colore:blue;
 }
 .box1, .box2, .box3 {
-  				float: left;
- 				width: 33.3333%; // 3分割
+  			            	float: left;
+                      min-width: 100px;
+ 				              width: 33.3333%; // 3分割
