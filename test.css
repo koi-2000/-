@@ -1,7 +1,7 @@
 h1{
   colore:blue;
 }
-.box1, .box2, .box3 {
+.box1, .box2, .box3, box4. {
   			            	float: left;
                       min-width: 250px;
- 				              width: 33.3333%; // 3分割
+ 				              width: 25%; // 4分割
