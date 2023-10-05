@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>HTML入門-フォームの作成</title>
 </head>
 <body>
 <table border="1">
