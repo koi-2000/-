@@ -3,8 +3,7 @@ h1{
   text-align: center;
 }
 
-.box1, .box2, .box3, .box4, .box5, .box6 {
-  color:lightblue;			            	
+.box1, .box2, .box3, .box4, .box5, .box6 {            	
   float: left;
   min-width: 200px;
   width: 20%; }// 5分割
