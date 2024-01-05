@@ -12,6 +12,7 @@ h1{
     list-style: none;
 }
 body {
+  background-color:red;
   background-image: url(IMG_4480.HEIC);
   background-size: cover;
   margin:15px;
