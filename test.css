@@ -14,4 +14,5 @@ h1{
 body {
   background-image: url(IMG_4480.HEIC);
   background-size: cover;
+  margin:30px;
 }
