@@ -11,3 +11,7 @@ h1{
   .main-menu{
     list-style: none;
 }
+body {
+  background-image: url("IMG_4480.HEIC");
+  background-size: cover;
+}
