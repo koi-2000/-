@@ -13,7 +13,7 @@ h1{
 }
 body {
   background-color:red;
-  background-image: url(IMG_4480.HEIC);
+  background-image: url("IMG_4480.HEIC");
   background-size: cover;
   margin:15px;
 }
