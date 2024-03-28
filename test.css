@@ -20,7 +20,7 @@ body {
   width : 100vw ; 
 }
 
-h2 figcaption {
+h1 figcaption {
   font-size: 60px;
   color: #ffffff;
   position: absolute;
