@@ -16,3 +16,7 @@ body {
   margin:15px;
 }
 
+/* 画面幅の50%の幅で画像を表示 */
+.image-vw {
+  width : 100vw ; 
+}
