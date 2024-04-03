@@ -18,7 +18,7 @@ h1 figcaption {
 .box1, .box2, .box3, .box4, .box5, .box6 {            	
   float: left;
   min-width: 200px;
-  width: 20%; }// 5分割
+  width: 16.6%; }// 5分割
 
   .main-menu{
     list-style: none;
