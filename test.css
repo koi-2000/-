@@ -16,7 +16,7 @@ h1 figcaption {
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {            	
-  float: center;
+  float: left;
   min-width: 180px;
   width: 16.6%; }// 6分割
 
