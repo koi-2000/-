@@ -21,6 +21,7 @@ h1 figcaption {
   width: 16.6%; }// 6分割
 
   .main-menu{
+    display:frex;
     list-style: none;
 }
 body {
