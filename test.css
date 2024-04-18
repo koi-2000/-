@@ -47,11 +47,6 @@ h2 {
   color: rgba(0, 0, 0, 10);
 }
 
-main {
-  padding: 130px 0px;
-  height: 500px;
-}
-
 header {
   display: flex;
   width: 100%;
@@ -60,3 +55,10 @@ header {
   align-items: center;
   position: fixed;
 }
+
+main {
+  padding: 130px 0px;
+  height: 500px;
+}
+
+
