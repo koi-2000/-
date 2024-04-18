@@ -1,5 +1,6 @@
 h1 figcaption {
-  font-size: 50px;
+ /* font-size: 50px;*/
+  font-size: 20%;
   color: rgba(0, 0, 0, 10);
   position: absolute;
   top: 20px;
