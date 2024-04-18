@@ -36,20 +36,10 @@ body {
   margin:1px;
 }
 
-
-
-h2 {
-  font-size: 130%;
-  padding: 2px 2px 2px 2px;
-  color: rgba(0, 0, 0, 10);
-}
-
 header {
   display: flex;
   /*width: 100%;*/
   align-items: center;
-
-
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {            	
@@ -63,4 +53,8 @@ main {
   height: 70px;
 }
 
-
+h2 {
+  font-size: 130%;
+  padding: 2px 2px 2px 2px;
+  color: rgba(0, 0, 0, 10);
+}
