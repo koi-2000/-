@@ -15,8 +15,6 @@ h1 figcaption {
   background-color: rgba(0, 0, 0, 0);
 }
 
-
-
   .main-menu{
     display:frex;
     list-style: none;
@@ -35,7 +33,7 @@ body {
 
 /* 画面幅の100%の幅で画像を表示 */
 .image-vw {
-  width : 97vw ; 
+  width : 98vw ; 
 }
 
 h2 {
