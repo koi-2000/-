@@ -15,10 +15,7 @@ h1 figcaption {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.box1, .box2, .box3, .box4, .box5, .box6 {            	
-  float: left;
-  min-width: 180px;
-  width: 16.6%; }// 6分割
+
 
   .main-menu{
     display:frex;
@@ -54,6 +51,11 @@ header {
   align-items: center;
 
 }
+
+.box1, .box2, .box3, .box4, .box5, .box6 {            	
+  float: left;
+  min-width: 180px;
+  width: 16.6%; }// 6分割
 
 main {
   padding: 10px 0px;
