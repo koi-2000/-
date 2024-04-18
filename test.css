@@ -31,9 +31,7 @@ body {
   margin:1px;
 }
 
-/* 画面幅の100%の幅で画像を表示 */
-.image-vw {
-  width : 98vw ; 
+ 
 }
 
 h2 {
@@ -47,6 +45,9 @@ header {
   /*width: 100%;*/
   align-items: center;
 
+/* 画面幅の100%の幅で画像を表示 */
+.image-vw {
+  width : 98vw ;
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {            	
