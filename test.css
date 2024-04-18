@@ -21,18 +21,6 @@ h1 figcaption {
   background-color: rgba(0, 0, 0, 0);
 }
 
-  .main-menu{
-    display:frex;
-    list-style: none;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-}
-
 body {
   margin:1px;
 }
@@ -48,6 +36,18 @@ header {
   float: left;
   min-width: 180px;
   width: 16.6%; }// 6分割
+
+ .main-menu{
+    display:frex;
+    list-style: none;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
 
 main {
   padding: 10px 10px 10px 10px;
