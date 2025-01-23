@@ -38,31 +38,7 @@
             document.body.appendChild(oMap);
         };
 
-        function EvtResize(){
-	        var w = window.innerWidth;
-	        var h = window.innerHeight;
-            if(oMap != null){
-                oMap.style.width   = w + "px";
-                oMap.style.height  = h + "px";
-                if(oMap.style.display == "none"){
-                    oMap.style.display = "block";
-                }
-            }
-        };
-
-        window.onload   = function(){
-            document.body.style.margin   = "0px";
-            document.body.style.padding  = "0px";
-            document.body.style.overflow = "hidden";
-
-            Init();
-        }
-        window.onresize = EvtResize;
-    </script>
-</head>
-<body></body>
-</html>
-
+        
         function EvtResize(){
 	        var w = window.innerWidth;
 	        var h = window.innerHeight;
